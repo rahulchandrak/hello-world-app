@@ -11,7 +11,7 @@ jobs:
         - name: checkout another repo
           uses: actions/checkout@v4
           with:
-            repository: github-actions-solar-system
+            repository: rahulchandrak/github-actions-solar-system
             path: github-actions-solar-system
         - name: check the contents of the checked out repos
           run: ls -lrt
