@@ -6,3 +6,12 @@ jobs:
         steps:
         - name: echo
           run: echo "this is a test"
+        - name: checkout the current repo
+          uses: actions/checkout@v4
+        - name: checkout another repo
+          uses: actions/checkout@v4
+          with:
+            repository: github-actions-solar-system
+            path: github-actions-solar-system
+        - name: check the contents of the checked out repos
+          run: ls -lrt
