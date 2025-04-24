@@ -3,6 +3,8 @@ on: push
 jobs:
     job-1:
         runs-on: ubuntu-latest
+        env:
+         NAME: my-name-is-job
         steps:
         - name: usage of a variable at step-level
           env:
