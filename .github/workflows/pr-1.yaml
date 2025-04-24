@@ -4,7 +4,7 @@ jobs:
     job-1:
         runs-on: ubuntu-latest
         outputs:
-            job-1-file-output: ${{steps.upload-file.conclusion}}
+            job-1-file-output: ${{steps.upload-file.outputs.artifact}}
             job-1-folder-output: ${{steps.upload-folder.outputs.artifact-id}}
         steps:
         - name: checkout the repo
