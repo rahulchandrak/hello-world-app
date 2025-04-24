@@ -1,0 +1,15 @@
+name: Practice-1
+on: push
+jobs:
+    job-1:
+        runs-on: ubuntu-latest
+        steps:
+        - name: multi-line-execution
+          run: |
+            echo whoami
+            pwd
+            df -hT
+            free -m
+            uname -a
+            cat /etc/environment
+            echo $PATH
