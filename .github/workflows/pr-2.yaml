@@ -1,0 +1,10 @@
+name: variables-practice
+on: push
+jobs:
+    job-1:
+        runs-on: ubuntu-latest
+        steps:
+        - name: usage of a variable at step-level
+          env:
+           NAME: my-name-is-step
+          run: echo "value of the variable is $NAME "
