@@ -6,6 +6,6 @@ jobs:
         steps:
         - name: checkout the repo
           uses: actions/checkout@v4
-          
+
         - name: multi-line-execution
-          run: ./script.sh
+          run: script.sh
