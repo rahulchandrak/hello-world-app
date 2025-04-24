@@ -9,4 +9,4 @@ jobs:
         - name: usage of a variable at step-level
           env:
            NAME: my-name-is-step
-          run: echo "value of the variable is ${{ env.NAME}} "
+          run: echo "value of the variable NAME is ${{ env.NAME}} "
