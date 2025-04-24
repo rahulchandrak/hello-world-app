@@ -7,5 +7,8 @@ jobs:
         - name: checkout the repo
           uses: actions/checkout@v4
 
-        - name: multi-line-execution
-          run: script.sh
+        - name: checkout the contents of the repo
+          run: |
+            pwd
+            ls -lrta
+            tree
