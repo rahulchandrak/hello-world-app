@@ -12,3 +12,7 @@ jobs:
             pwd
             ls -lrta
             tree
+        - name: execute the shell script
+          run: |
+            chmod +x *.sh
+            ./script.sh
