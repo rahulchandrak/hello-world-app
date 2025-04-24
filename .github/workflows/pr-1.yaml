@@ -29,6 +29,7 @@ jobs:
             name: folder-artifact
             path: test/
     job-2:
+        needs: job-1
         runs-on: ubuntu-latest
         steps:
         - name: download the artifact file
