@@ -42,3 +42,5 @@ jobs:
           with:
             name: folder-artifact
             path: .
+        - name: check the contents of the directory post download
+          run: tree
